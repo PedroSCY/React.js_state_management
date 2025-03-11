@@ -1,7 +1,8 @@
-import useCurso from "../hooks/useCurso";
+import useCurso from "@/hooks/useCurso";
+
 
 export default function Player() {
-  const {aulaAtual} = useCurso()
+  const { aulaAtual } = useCurso();
 
   return (
     <div className="flex flex-col justify-center items-center w-4/5 h-3/5 bg-zinc-700 rounded-lg p-3">

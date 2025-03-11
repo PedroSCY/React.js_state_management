@@ -1,19 +1,19 @@
 import { createContext, ReactNode, useState } from "react";
-import Capitulo from "../model/Capitulo";
-import CapituloData from "../constants/capitulos";
-import Aula from "../model/Aula";
-import CursoEstatisticas from "../model/CursoEstatisticas";
+import Capitulo from "../data/model/Capitulo";
+import CapituloData from "../data/constants/capitulos";
+import Aula from "../data/model/Aula";
+import CursoEstatisticas from "../data/model/CursoEstatisticas";
 
 interface CursoContextProps {
-  capitulos: Capitulo[],
-  aulaAtual: Aula,
-  qtdeDeAulas: number,
-  qtdeDeAulasConcluidas: number,
-  duracaoTotal: string,
-  duracaoConcluida: string,
-  percentualConclusao: number
-  selecionarAula: (aula: Aula) => void,
-  alternarConclusaoAula: (aulaSelecionada: Aula) => void,
+  capitulos: Capitulo[];
+  aulaAtual: Aula;
+  qtdeDeAulas: number;
+  qtdeDeAulasConcluidas: number;
+  duracaoTotal: string;
+  duracaoConcluida: string;
+  percentualConclusao: number;
+  selecionarAula: (aula: Aula) => void;
+  alternarConclusaoAula: (aulaSelecionada: Aula) => void;
 }
 
 const CursoContext = createContext<CursoContextProps>({
@@ -61,17 +61,17 @@ export function CursoProvider({ children }: { children: ReactNode }) {
           return cursoEstatisticas.qtdeDeAulas();
         },
         get qtdeDeAulasConcluidas() {
-          return cursoEstatisticas.qtdeDeAulasConcluidas()
+          return cursoEstatisticas.qtdeDeAulasConcluidas();
         },
         get duracaoTotal() {
-          return cursoEstatisticas.duracaoTotal()
+          return cursoEstatisticas.duracaoTotal();
         },
         get duracaoConcluida() {
-          return cursoEstatisticas.duracaoConcluida()
+          return cursoEstatisticas.duracaoConcluida();
         },
         get percentualConclusao() {
-          return cursoEstatisticas.percentualConclusao()
-        }
+          return cursoEstatisticas.percentualConclusao();
+        },
       }}
     >
       {children}

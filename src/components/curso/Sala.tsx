@@ -1,8 +1,9 @@
 import React from "react";
-import useCurso from "../hooks/useCurso";
+
 import CapituloItem from "./CapituloItem";
 import Estatisticas from "./Estatisticas";
 import Player from "./Player";
+import useCurso from "@/hooks/useCurso";
 
 export default function Sala() {
   const { capitulos } = useCurso();
@@ -15,8 +16,8 @@ export default function Sala() {
         })}
       </div>
       <div className="flex flex-col justify-center items-center gap-4 flex-1">
-        <Estatisticas/>
-        <Player/>
+        <Estatisticas />
+        <Player />
       </div>
     </div>
   );
