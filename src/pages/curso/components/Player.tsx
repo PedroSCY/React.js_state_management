@@ -6,7 +6,7 @@ export default function Player() {
   return (
     <div className="flex flex-col justify-center items-center w-4/5 h-3/5 bg-zinc-700 rounded-lg p-3">
       <span className="text-2xl font-black">{aulaAtual.titulo}</span>
-      <div className="aspect-video h-full p-5">
+      <div className="aspect-video w-full max-w-7xl p-10">
         <iframe
           width="100%"
           height="100%"
