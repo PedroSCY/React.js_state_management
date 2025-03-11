@@ -3,7 +3,7 @@ import Area from "../template/Area";
 import CarrinhoVazio from "./CarrinhoVazio";
 import ItemCarrinhoCard from "./ItemCarrinhoCard";
 import Real from "@/utils/Real";
-import { IconTrash, IconX } from "@tabler/icons-react";
+import { IconX } from "@tabler/icons-react";
 
 export default function Carrinho() {
   const { itens, valorTotal, limpar } = useCarrinho();
