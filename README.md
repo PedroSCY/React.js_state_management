@@ -10,7 +10,7 @@ Este repositório serve como um registro da minha jornada estudando e aplicando 
 ## 🌎 Demonstração
 
 Você pode visualizar o projeto em funcionamento acessando:  
-🔗 **[chegando...]**
+🔗 **[react-js-state-management.vercel.app](https://react-js-state-management.vercel.app)**  
 
 ## 📂 O que você encontrará aqui?
 
